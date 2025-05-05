@@ -9,9 +9,9 @@ void EXTI1_IRQHandler()
 	{
 		GPIOB->BRR=1<<0;
 		GPIOB->ODR=1<<1;
-		delay(500000);
+		delay(50000);
 		GPIOB->BRR=1<<1;
-		delay(500000);
+		delay(50000);
 	}
 	EXTI->PR=1<<1;
 }
